@@ -9,7 +9,6 @@ const { Provider } = ProductContext
 
 
 export interface Props {
-  // children?: ReactElement | ReactElement[];
   children: ( args: ProductCardhandlers ) => JSX.Element ;
   className?: string;
   initialValues?: InitialValues;
@@ -47,7 +46,6 @@ export const ProductCard = ({ children,  className, initialValues, onChange, pro
           }) 
         }
       </article>
-
     </Provider>
   )
 };

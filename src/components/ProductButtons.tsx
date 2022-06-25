@@ -11,7 +11,6 @@ export interface Props {
 export const ProductButtons = ({ className, style }: Props) => {
   const { increaseBy, counter, maxCount} = useContext(ProductContext);
 
-
   const isMaxReached = useCallback(
     () => !!maxCount && counter === maxCount,
     [counter, maxCount],
